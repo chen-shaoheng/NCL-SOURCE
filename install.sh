@@ -15,8 +15,9 @@ sed -i '381a set model   = $mach' config/ymake
 sed -i '382a set arch    = $mach' config/ymake
 sed -i '383a set sysincs = LINUX' config/ymake
 sed -i '384a set vendor  = ARM' config/ymake
+sed -i '385a breaksw' config/ymake
 
-./Configure -V
+./Configure -v
 
 make Everything
 make all install
